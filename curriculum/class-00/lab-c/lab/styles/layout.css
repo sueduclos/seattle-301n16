@@ -1,0 +1,26 @@
+nav, article, aside, footer section {
+  margin: 0 auto;
+  width: 900px;
+}
+
+nav {
+  margin-top: 25px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  float: left;
+  padding-right: 2px;
+}
+
+#slogan {
+  width: 250px;
+  padding-left: 55px;
+  color: #a3a4a2;
+  font-family: 'Abel', sans-serif;
+  font-size: .65em;
+  text-transform: uppercase;
+}
