@@ -1,0 +1,24 @@
+#logo {
+  float: left;
+  padding-bottom: 25px;
+  color: black;
+  text-decoration: none;
+}
+
+#logo img {
+  float: left;
+}
+
+#logo h1 {
+  padding-left: 50px;
+  font-family: 'Yellowtail', cursive;
+  font-size: 2.4em;
+}
+
+hr {
+  clear: both;
+  border: 0;
+  height: 13px;
+  background-image: url('../img/hr.png');
+}
+
