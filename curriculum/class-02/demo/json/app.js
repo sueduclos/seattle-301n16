@@ -9,6 +9,7 @@ function Dog(dog) {
 Dog.allDogs = [];
 
 Dog.prototype.render = function() {
+  console.log('allDogs ',Dog.allDogs);
   $('main').append('<div class="clone"></div>');
   let dogClone = $('div[class="clone"]');
 
@@ -24,7 +25,7 @@ Dog.prototype.render = function() {
 };
 
 Dog.readJson = () => {
-  $.get('./data.json', 'json')
+  $.get('data.json', 'json')
     .then(data => {
       data.forEach(item => {
         Dog.allDogs.push(new Dog(item));
