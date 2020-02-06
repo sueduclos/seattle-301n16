@@ -1,0 +1,7 @@
+body {
+    background: pink;
+}
+
+div.foobar {
+    border: 1px solid red;
+}

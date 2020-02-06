@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Books</title>
+  <!-- <link rel="stylesheet" href="../public/styles/styles.css" /> -->
+  <!-- <link rel="stylesheet" href="../../public/styles/styles.css" /> -->
+  <!-- <link rel="stylesheet" href="/public/styles/styles.css" /> -->
+  <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+
+<body>
+  <h1>
+    Book Lisgt
+  </h1>
+
+  <ul>
+    <% books.forEach( book => { %>
+    <li>
+      <%= book.volumeInfo.title %>
+    </li>
+    <% }) %>
+
+  </ul>
+
+</body>
+
+</html>
