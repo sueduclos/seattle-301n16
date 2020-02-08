@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tasks;
+
+CREATE TABLE tasks (
+  id SERIAL PRIMARY KEY,
+  task VARCHAR(255),
+  assigned VARCHAR(255),
+  status VARCHAR(255)
+)

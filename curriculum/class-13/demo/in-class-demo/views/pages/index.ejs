@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tasks List</title>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <%- include('../partials/header.ejs') %>
+
+  <h1>Task List</h1>
+  <ul class="tasks">
+    <% tasks.forEach( task => {%>
+    <li>
+      <div>
+        <p>Task: <%- task.task %></p>
+        <p>Assigned To: <%- task.assigned %></p>
+        <p>Status: <%- task.status %></p>
+      </div>
+    </li>
+    <% }) %>
+  </ul>
+</body>
+
+</html>

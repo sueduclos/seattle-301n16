@@ -1,0 +1,52 @@
+body {
+    background: pink;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ccc;
+}
+
+header input[type=checkbox] {
+    display: none;
+}
+
+header input[type=checkbox]:checked + ul {
+    display: block;
+}
+
+header ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: block;
+}
+
+header ul li:hover {
+    background: #111;
+}
+
+header ul li:hover a {
+    color: #eee;
+}
+
+header ul li a {
+    color: #111;
+    text-decoration: none;
+}
+
+.tasks {
+    list-style-type: none;
+}
+
+.tasks div {
+    background: #eee;
+    border: 1px solid #111;
+    margin: 1rem;
+    padding: 1rem;
+}

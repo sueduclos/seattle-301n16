@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Adding a Task</title>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <%- include('../partials/header.ejs') %>
+  <h1>Add a Task</h1>
+  <form method="post" action="/add">
+    <input name="task" placeholder="New Task" />
+    <input name="assignedTo" placeholder="Assigned To?" />
+    <input type="hidden" name="status" value="incomplete" />
+    <button>Save Task</button>
+  </form>
+</body>
+
+</html>
