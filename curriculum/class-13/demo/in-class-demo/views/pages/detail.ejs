@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Details</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <p><%- task.task %></p>
+      <p><%- task.assigned %></p>
+      <p><%- task.status %></p>
+    </section>
+
+    <form method="post" action="/task/<%- task.id %>?_method=put">
+      <input type="text" name="task" value="<%- task.task %>" />
+      <input type="text" name="assigned" value="<%- task.assigned %>" />
+      <input type="text" name="status" value="<%- task.status %>" />
+      <button type="submit">Save the task</button>
+    </form>
+
+    <form method="post" action="/task/<%- task.id %>?_method=delete">
+      <button type="submit">Nuke the task</button>
+    </form>
+  </main>
+</body>
+
+</html>

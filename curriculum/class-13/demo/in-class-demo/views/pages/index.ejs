@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tasks</title>
+</head>
+
+<body>
+  <main>
+    <ul>
+      <% tasks.forEach(task => { %>
+      <li>
+        <a href="/task/<%- task.id %>"><%- task.task %></a>
+      </li>
+      <% }) %>
+    </ul>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>Star Wars People</title>
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Star Wars Characters</h1>
+    <p>Vote for your favorites to show what you like!</p>
+  </header>
+  <main>
+    <section class="characters">
+
+      <% for(let x = 0; x < results.length; x++) { %>
+      <div class="character">
+        <header>
+
+          <h2><%= results[x].name %></h2>
+        </header>
+        <span><%= results[x].likes || 0 %></span>
+        <button>Upvote</button>
+      </div>
+      <% } %>
+
+    </section>
+  </main>
+  <footer>
+    <strong>&copy; 2020 Code Fellows</strong>
+  </footer>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
