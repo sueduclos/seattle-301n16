@@ -1,6 +1,6 @@
 'use strict';
 
-let likeButtons = document.getElementsByTagName('button');
+let likeButtons = $('button');
 
 for (let i = 0; i < likeButtons.length; i++) {
   likeButtons[i].addEventListener('click', likeMe);
