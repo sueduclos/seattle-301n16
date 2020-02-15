@@ -1,0 +1,33 @@
+h1 {
+  font-size: 1.5em;
+}
+.characters {
+  width: auto;
+}
+
+.character {
+  background: #fff;
+  box-shadow: 0 10px 6px -6px #777;
+  margin: 1em;
+  width: 250px;
+}
+
+.character header {
+  background: #ddd;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.character span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2.5em;
+  text-align: center;
+}
+
+.character button {
+  display: block;
+  margin: .5em auto;
+  width: 50%;
+}
