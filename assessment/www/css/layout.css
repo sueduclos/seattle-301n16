@@ -3,13 +3,17 @@ h1 {
 }
 .characters {
   width: auto;
+  /* align-content: flex-start; */
 }
 
 .character {
+  display: inline-block;
+  justify-content: space-evenly;
+  /* flex-grow: inherit; */
   background: #fff;
   box-shadow: 0 10px 6px -6px #777;
-  margin: 1em;
-  width: 250px;
+  margin: 2em;
+  width: 330px;
 }
 
 .character header {
@@ -22,11 +26,12 @@ h1 {
   display: block;
   font-size: 1.5em;
   font-weight: bold;
-  line-height: 2.5em;
+  line-height: 4.5em;
   text-align: center;
 }
 
 .character button {
+  background-color: aqua;
   display: block;
   margin: .5em auto;
   width: 50%;
