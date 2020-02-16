@@ -13,3 +13,5 @@ function likeMe(e) {
   count++;
   counter.textContent = count;
 }
+
+// function getMore

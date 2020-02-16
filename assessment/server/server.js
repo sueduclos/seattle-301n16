@@ -40,6 +40,7 @@ app.set('views', './server/views');
 // Route Handler Definitions. Each express method and route should call
 // a method that the routes.js file exported
 app.get('/', routes.homePageHandler);
+// app.get('/characters', fetchCharactersFromSWAPI);
 
 // Wire in the defaults we required above.
 app.use('*', defaults.notFoundHandler);
