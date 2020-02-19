@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Healthy People are Cool</title>
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/site.css" />
+
+  <script id="details_template" type="text/x-handlebars-template">
+    <h3>{{day}}</h3>
+    <p>Steps: {{steps}}</p>
+    <p>Calories: {{calories}}</p>
+    <p>Sleep Hours: {{sleep_hours}}</p>
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Health Nutz</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Our Goals</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Steps</th>
+            <th>Calories</th>
+            <th>Sleep Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%- goals.steps %></td>
+            <td><%- goals.calories %></td>
+            <td><%- goals.sleep %></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <ul>
+        <% healthRecords.forEach( day => { %>
+        <li id=<%- day.id %>>
+          <%- day.day %> - <%- day.pct %>
+        </li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <div class="overlay">
+      <div class="modal">
+        <div class="header">
+          <span>Details</span>
+          <button>X</button>
+        </div>
+        <div class="content"></div>
+      </div>
+    </div>
+
+  </main>
+  <footer>&copy; 2020 John</footer>
+
+  <script>
+    let rootUrl = 'http://localhost:3000';
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
+  <script src="/js/app.js"></script>
+
+</body>
+
+</html>

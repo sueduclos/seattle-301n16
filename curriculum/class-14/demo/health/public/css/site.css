@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: red;
+    color: ivory;
+    line-height: 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+footer {
+    background: green;
+    color: ivory;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+table thead {
+    background: #111;
+}
+
+table th {
+    color: #eee;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+table tbody {
+    background: #ccc;
+}
+
+table td {
+    color: #111;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+    padding: .5rem 0;
+}
+
+li:hover {
+    background: #ccc;
+    color: #fff;
+}
